@@ -8,37 +8,37 @@
   <meta charset="utf-8">    
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
   
-  <title>A-GISpicks - Alfobre GIS picks</title>
+  <title>A-GISpicks - A curated list of useful websites for GIS projects</title>
 
-<!--
-  <meta name="description" content="Galeria com imagens de autocolantes políticos relacionados com o 25 de Abril de 1974 e anos seguintes. Imagens disponibilizadas gratuitamente e sem restrições.">
+
+  <meta name="description" content="Curated list of useful websites for GIS projects">
   <meta name="author" content="nafergo (Alfobre.com)">
   
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://projetoalfobre.github.io/a-gispicks/">
--->
+
   
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   
-<!--
-  <meta property="og:title" content="Galeria de Autocolantes da Revolução de Abril" />
-  <meta property="og:type" content="galeria de imagens" />
-  <meta property="og:locale" content="pt_PT" />
-  <meta property="og:description" content="Galeria com imagens de autocolantes políticos relacionados com o 25 de Abril de 1974 e anos seguintes. Imagens disponibilizadas gratuitamente e sem restrições." />
+
+  <meta property="og:title" content="A-GISpicks - A curated list of useful websites for GIS projects" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en" />
+  <meta property="og:description" content="Curated list of useful websites for GIS projects." />
   <meta property="og:image" content="images/ogimage.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Mosaico de imagens de autocolantes no fundo com o título Galeria de Autocolantes da Revolução de Abril ao centro." />
+  <meta property="og:image:alt" content="" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:url" content="https://projetoalfobre.github.io/a-gispicks/" />
-  <meta property="og:site_name" content="Galeria de Autocolantes da Revolução de Abril" />
+  <meta property="og:site_name" content="A-GISpicks - Alfobre GIS picks | our favorites" />
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Galeria de Autocolantes da Revolução de Abril">
-  <meta name="twitter:description" content="Galeria com imagens de autocolantes políticos relacionados com o 25 de Abril de 1974 e anos seguintes. Imagens disponibilizadas gratuitamente e sem restrições.">
+  <meta name="twitter:title" content="A-GISpicks - A curated list of useful websites for GIS projects">
+  <meta name="twitter:description" content="Curated list of useful websites for GIS projects.">
   <meta name="twitter:image" content="images/card.png">
 
--->
+
     <!-- Compiled and minified CSS -->
       <!-- CSS  -->
       <link rel="stylesheet" href="./style.css">
@@ -48,6 +48,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="stylesheet" href="./fix.css">
 
 
 </head>
@@ -58,20 +59,27 @@
   <div class="row">
     <div class="col s12">
       <h1>A-GISpicks</h1>
-      <h4>Alfobre GIS picks (or favorites)</h4>
+      <h4>A curated list of useful websites for GIS projects</h4>
+      
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">info</i>Why?</div>
+          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header"><img src="favicon.svg" style="width: 2rem;margin-right: 1rem;"> Who?</div>
+          <div class="collapsible-body"><span>
+            <p class="">Project developed by <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a></p>
+            </span></div>
+        </li>
+      </ul>
+
+
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-4@sm col-3@md">
-      <div class="filters-group">
-        <label for="filters-search-input" class="filter-label">Search</label>
-        <input class="textfield filter__search js-shuffle-search" type="search" id="filters-search-input" />
-      </div>
-    </div>
-  </div>
   <div class="row">
     <div class="col-12@sm filters-group-wrap">
       <div class="filters-group">
@@ -80,7 +88,7 @@
           <button class="btn btn--primary" data-group="portal">Portal</button>
           <button class="btn btn--primary" data-group="borders">Borders</button>
           <button class="btn btn--primary" data-group="archaeology">Archaeology</button>
-          <button class="btn btn--primary" data-group="osm">OpenStreetMapCity</button>
+          <button class="btn btn--primary" data-group="osm">OpenStreetMap</button>
         </div>
       </div>
       <fieldset class="filters-group">
@@ -105,12 +113,12 @@
   <div id="grid" class="row my-shuffle-container">
 
     <figure class="col-12@xs col-12@sm col-5@md picture-item" data-groups='["portal"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
-      <div class="picture-item__inner white-text">
+      <div class="picture-item__inner">
         <h1>World Bank Open Data</h1>
-        <p>World Bank</p>
-        <i class="material-icons">add</i>  <i class="large material-icons">insert_chart</i>
+        <p>dorld Bankorld Bankorld Bankorld Bankorld Bankorld Bankorld Bankorld Bankorld Bankorld Bankd</p>
+        <a href="https://data.worldbank.org/" target="_blank" rel="noopener">  test </a>
     <div class="picture-item__details">
-      <figcaption class="picture-item__title"><a href="https://data.worldbank.org/" target="_blank" rel="noopener">  <i class="material-icons">add</i> </a></figcaption>
+      <figcaption class="picture-item__title"><a href="https://data.worldbank.org/" target="_blank" rel="noopener">  test </a></figcaption>
       <p class="picture-item__tags hidden@xs">Portal</p>
     </div>
   </div>
@@ -218,7 +226,10 @@
 </div>
 
     <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="init.js"></script>
+
  
 <!-- partial -->
   <script src='https://unpkg.com/shufflejs@6'></script><script  src="./script.js"></script>
