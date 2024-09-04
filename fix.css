@@ -1,2 +1,21 @@
-.picture-item__inner h1 {font-size: 2rem;margin: 0.8rem 0 1.68rem 0;}
-.picture-item__inner {padding: 1em;}
+.picture-item {height: 310px; margin-top: 24px;}
+
+.badge{text-transform: uppercase;}
+
+figure{margin:0em 0px!important}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.btn{background-color: #2196F3 !important;}
+.btn:hover{background-color: #1565C0 !important}
+.btn:active{background-color: #1565C0 !important}
+.active{background-color: #1565C0 !important}
+.btn:focus{background-color: #1565C0 !important}
