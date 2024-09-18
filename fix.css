@@ -14,7 +14,7 @@ body {
     flex: 1 0 auto;
   }
 
-.btn{background-color: #2196F3 !important;}
+.btn{background-color: #2196F3 !important; margin: 1em;}
 .btn:hover{background-color: #1565C0 !important}
 .btn:active{background-color: #1565C0 !important}
 .active{background-color: #1565C0 !important}
