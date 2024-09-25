@@ -69,21 +69,23 @@
 <body>
   <header>
 <!-- partial:index.partial.html -->
-<div class="container">
+<div class="nocontainer">
   <div class="row">
-    <div class="col s12">
+    <div class="col s12 m6">
       <h1>A-GISpicks</h1>
-      <h4>A curated list of useful websites for GIS projects</h4>
-      
+    </div>
+      <div class="col s12 m6">      
       <ul class="collapsible">
         <li>
           <div class="collapsible-header"><i class="material-icons">info</i>Why?</div>
-          <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-body white"><span>
+            This is a curated list of useful websites for our GIS and mapping projects. Started as a simple shortlist but then sharing it with the world seemed a good idea...</span></div>
         </li>
         <li>
           <div class="collapsible-header"><img src="favicon.svg" style="width: 2rem;margin-right: 1rem;"> Who?</div>
           <div class="collapsible-body white"><span>
             <p class="">Project developed by <a href="https://alfobre.com" class="alfobre-link" target="_blank">Alfobre.com</a></p>
+            <p>Alfobre (portuguese for seedbed) is a collective devoted to the creation and development of projects, strategies and products in the Heritage field.</p>
             </span></div>
         </li>
       </ul>
@@ -91,11 +93,12 @@
   </div>
 </div>
 
-<div class="container">
+
+<div class="nocontainer">
   <div class="row">
     <div class="col s12 filters-group-wrap">
       <div class="filters-group">
-        <p class="filter-label">Filter</p>
+        <p class="filter-label">FILTERS</p>
         <div class="btn-group filter-options">
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="portugal">Portugal</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="europe">Europe</button>
@@ -103,7 +106,11 @@
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="portal">Portal</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="borders">Borders</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="archaeology">Archaeology</button>
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="dem">Elevation</button>          
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="osm">OpenStreetMap</button>
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="toponymy">Toponymy</button>
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="data">Data</button> 
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="service">Service</button>               
         </div>
       </div>
 <!--
@@ -129,116 +136,209 @@
 
 <main>
 
-<div class="container">
+<div class="nocontainer">
   <div id="grid" class="row my-shuffle-container">
 
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","portal"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","portal","data"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://data.worldbank.org/" target="_blank">World Bank Open Data</a></span>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>Provides a listing of available World Bank datasets, including databases, pre-formatted tables, reports, and other resources.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Portal</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","portal"]' data-date-created="2024-08-28" data-title="data.europa.eu">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","portal","data"]' data-date-created="2024-08-28" data-title="data.europa.eu">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://data.europa.eu/pt" target="_blank">data.europa.eu</a></span>
-          <p>IThe official portal for European data. This website is managed by the Publications Office of the European Union</p>
+          <p >The single point of access to open data from European countries, EU institutions, agencies and bodies and other European countries.</p>
         </div>
-        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Portal</span> 
+        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal"]' data-date-created="2024-08-28" data-title="dados.gov.pt">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal", "data","portugal"]' data-date-created="2024-08-28" data-title="dados.gov.pt">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://dados.gov.pt" target="_blank">dados.gov.pt</a></span>
-          <p>Open platform for Portuguese public data.Agência para a Modernização Administrativa, IP (AMA)</p>
+          <p>Open platform for Portuguese public data. It aggregates and hosts open data from Public Administration, it's the central catalog of open data in Portugal.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal", "portugal"]' data-date-created="2024-08-28" data-title="Registo Nacional de Dados Geográficos">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal", "data","portugal"]' data-date-created="2024-08-28" data-title="Registo Nacional de Dados Geográficos">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/home" target="_blank">Registo Nacional de Dados Geográficos</a></span>
-          <p>Direção-Geral do Território,</p>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>The portuguese National Geographic Data Registry (RNDG) is a metadata catalog of geodata datasets produced or maintained by public authorities.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["borders"]' data-date-created="2024-08-28" data-title="Global Administrative Areas">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["borders","world","data"]' data-date-created="2024-08-28" data-title="Global Administrative Areas">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://gadm.org/" target="_blank">Global Administrative Areas (GADM)</a></span>
-          <p>Direção-Geral do Território,</p>
-          <p>maps and spatial data for all countries and their sub-divisionsy.</p>
+          <p>Administrative areas of all countries, at all levels of sub-division.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Borders</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Borders</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["borders", "osm"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["borders","osm","service"]' data-date-created="2024-08-28" data-title="OSM-Boundaries">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://osm-boundaries.com/" target="_blank">OSM-Boundaries</a></span>
-          <p>Direção-Geral do Território,</p>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>Easily extract boundaries such as country borders, state borders, and equivalents from the OpenStreetMap databases.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Borders</span> <span class="badge">OSM</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Borders</span> <span class="badge">OSM</span> <span class="badge">Service</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["world", "osm"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","osm","service"]' data-date-created="2024-08-28" data-title="overpass turbo">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a></span>
-          <p>Direção-Geral do Território,</p>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <p>A web-based data filtering or data mining tool for OpenStreetMap.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">OSM</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">OSM</span> <span class="badge">Service</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["archaeology", "portugal"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","osm","service"]' data-date-created="2024-08-28" data-title="MyOSMatic">
       <div class="card small">
         <div class="card-content">
-          <span class="card-title"><a href="https://overpass-turbo.eu/" target="_blank">overpass turbo</a></span>
-          <p>Direção-Geral do Território,</p>
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <span class="card-title"><a href="https://overpass-turbo.eu/" target="_blank">MyOSMatic</a></span>
+          <p>Web service that allows you to generate maps using OpenStreetMap data. The generated maps are available in PNG, PDF and SVG formats and are ready to be printed.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Archaeology</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">OSM</span> <span class="badge">Service</span> 
         </div>
       </div>
     </figure>
 
- 
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","osm","data"]' data-date-created="2024-08-28" data-title="Geofabrik download server">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="http://download.geofabrik.de/" target="_blank">Geofabrik download server</a></span>
+          <p>This server has data extracts from the OpenStreetMap project which are normally updated every day.</p>
+        </div>
+        <div class="card-action"><span class="badge">World</span> <span class="badge">OSM</span> <span class="badge">Data</span> 
+        </div>
+      </div>
+    </figure>
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","portal","data"]' data-date-created="2024-08-28" data-title="INSPIRE Geoportal">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://inspire-geoportal.ec.europa.eu" target="_blank">INSPIRE Geoportal</a></span>
+          <p>The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and EFTA countries under the INSPIRE Directive.</p>
+        </div>
+        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        </div>
+      </div>
+    </figure>
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","archaeology","data"]' data-date-created="2024-08-28" data-title="Portal do Arqueólogo (Archaeologist Portal)">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://patrimoniodgpc.maps.arcgis.com/home/item.html?id=b58036247d8849b59b45144135662d86" target="_blank">Portal do Arqueólogo (Archaeologist Portal)</a></span>
+          <p>Georeferenced archaeological heritage registered in Endovélico, the portuguese national archaeological information and management system.</p>
+        </div>
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Archaeology</span> <span class="badge">Data</span> 
+        </div>
+      </div>
+    </figure>
+
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","service","data"]' data-date-created="2024-08-28" data-title="viSMOS">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://smos.dgterritorio.gov.pt/vi-smos/" target="_blank">viSMOS</a></span>
+          <p>WebGIS of the Land Occupation Monitoring System (SMOS), a portuguese national administration project.</p>
+        </div>
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">Service</span> 
+        </div>
+      </div>
+    </figure>
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","dem","data"]' data-date-created="2024-08-28" data-title="DEM data for Portugal">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://www.fc.up.pt/pessoas/jagoncal/dems/" target="_blank">DEM data for Portugal</a></span>
+          <p>Digital Elevation Models of mainland Portugal, obtained by satellite missions: SRTM, ASTER, ALOS-Prism and TerraSAR-X.</p>
+        </div>
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">DEM</span> 
+        </div>
+      </div>
+    </figure>
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","dem","data"]' data-date-created="2024-08-28" data-title="Altimetria Portugal 25m">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://blog.viasig.com/2021/11/altimetria-portugal-25m/" target="_blank">Altimetria Portugal 25m</a></span>
+          <p>25m Digital Surface Model (DSM) for Portugal</p>
+        </div>
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">DEM</span> 
+        </div>
+      </div>
+    </figure>
+    
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","portal","data"]' data-date-created="2024-08-28" data-title="CIA’s World Factbook">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://www.cia.gov/the-world-factbook/" target="_blank">CIA’s World Factbook</a></span>
+          <p>The World Factbook provides basic intelligence on the history, people, government, economy, energy, geography, environment, communications, transportation, military, terrorism, and transnational issues for 265 world entities.</p>
+        </div>
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Data</span> <span class="badge">Portal</span> 
+        </div>
+      </div>
+    </figure>
+
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","toponymy","data"]' data-date-created="2024-08-28" data-title="INE Geodata">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://www.ine.pt/scripts/hvd/en/geo.html" target="_blank">INE Geodata </a></span>
+          <p>Geospatial Data Sets shared by the portuguese National Statistics Institute (Instituto Nacional de Estatística): Addresses, Reference Parcels, Toponymy.</p>
+        </div>
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Toponymy</span> <span class="badge">Data</span> 
+        </div>
+      </div>
+    </figure>
 
 
   </div>
 </div>
 </main>
 
-<footer class=""></footer>
+<footer class="">
+
+  <div class="nocontainer">
+   
+    <div class="row ">
+          <div class="col-sm-12 right" style="color:rgba(0,0,0,.5) !important;">
+              
+                <p>2024 | <a href="https://alfobre.com" class="" target="_blank">Alfobre.com</a></p>
+          </div>
+    </div>
+</div>
+
+
+
+</footer>
 
 
 
