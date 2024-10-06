@@ -103,10 +103,10 @@
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="portugal">Portugal</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="europe">Europe</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="world">World</button>          
-          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="portal">Portal</button>
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="catalog">Catalog</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="borders">Borders</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="archaeology">Archaeology</button>
-          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="dem">Elevation</button>          
+          <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="elevation">Elevation</button>          
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="osm">OpenStreetMap</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="toponymy">Toponymy</button>
           <button class="btn waves-effect waves-light" onclick="this.blur();" data-group="data">Data</button> 
@@ -140,46 +140,57 @@
   <div id="grid" class="row my-shuffle-container">
 
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","portal","data"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","catalog","data"]' data-date-created="2024-08-28" data-title="World Bank Open Data">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://data.worldbank.org/" target="_blank">World Bank Open Data</a></span>
           <p>Provides a listing of available World Bank datasets, including databases, pre-formatted tables, reports, and other resources.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","portal","data"]' data-date-created="2024-08-28" data-title="data.europa.eu">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","catalog","data"]' data-date-created="2024-08-28" data-title="Free GIS Data">
+      <div class="card small">
+        <div class="card-content">
+          <span class="card-title"><a href="https://freegisdata.rtwilson.com/" target="_blank">Free GIS Data</a></span>
+          <p>Categorised list of links to over 500 sites providing freely available geographic datasets.</p>
+        </div>
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
+        </div>
+      </div>
+    </figure>
+
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","catalog","data"]' data-date-created="2024-08-28" data-title="data.europa.eu">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://data.europa.eu/pt" target="_blank">data.europa.eu</a></span>
           <p >The single point of access to open data from European countries, EU institutions, agencies and bodies and other European countries.</p>
         </div>
-        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal", "data","portugal"]' data-date-created="2024-08-28" data-title="dados.gov.pt">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["catalog", "data","portugal"]' data-date-created="2024-08-28" data-title="dados.gov.pt">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://dados.gov.pt" target="_blank">dados.gov.pt</a></span>
           <p>The central catalog of open data in Portugal, aggregates and hosts open data from Public Administration.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portal", "data","portugal"]' data-date-created="2024-08-28" data-title="Registo Nacional de Dados Geográficos">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["catalog", "data","portugal"]' data-date-created="2024-08-28" data-title="Registo Nacional de Dados Geográficos">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/home" target="_blank">RNDG</a></span>
           <p>The portuguese National Geographic Data Registry is a catalog of geodata produced or maintained by portuguese public authorities.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
@@ -240,13 +251,13 @@
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","portal","data"]' data-date-created="2024-08-28" data-title="INSPIRE Geoportal">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["europe","catalog","data"]' data-date-created="2024-08-28" data-title="INSPIRE Geoportal">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://inspire-geoportal.ec.europa.eu" target="_blank">INSPIRE Geoportal</a></span>
           <p>The central European access point to the data provided by EU Member States and EFTA countries under the INSPIRE Directive.</p>
         </div>
-        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Portal</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">Europe</span> <span class="badge">Catalog</span> <span class="badge">Data</span> 
         </div>
       </div>
     </figure>
@@ -274,35 +285,35 @@
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","dem","data"]' data-date-created="2024-08-28" data-title="DEM data for Portugal">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","elevation","data"]' data-date-created="2024-08-28" data-title="DEM data for Portugal">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://www.fc.up.pt/pessoas/jagoncal/dems/" target="_blank">DEM data for Portugal</a></span>
           <p>Digital Elevation Models of mainland Portugal, obtained by satellite missions: SRTM, ASTER, ALOS-Prism and TerraSAR-X.</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">DEM</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">Elevation </span> 
         </div>
       </div>
     </figure>
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","dem","data"]' data-date-created="2024-08-28" data-title="Altimetria Portugal 25m">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["portugal","elevation","data"]' data-date-created="2024-08-28" data-title="Altimetria Portugal 25m">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://blog.viasig.com/2021/11/altimetria-portugal-25m/" target="_blank">Altimetria Portugal 25m</a></span>
           <p>25m Digital Surface Model (DSM) for Portugal</p>
         </div>
-        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">DEM</span> 
+        <div class="card-action"><span class="badge">Portugal</span> <span class="badge">Data</span> <span class="badge">Elevation</span> 
         </div>
       </div>
     </figure>
     
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","portal","data"]' data-date-created="2024-08-28" data-title="CIA’s World Factbook">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","catalog","data"]' data-date-created="2024-08-28" data-title="CIA’s World Factbook">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://www.cia.gov/the-world-factbook/" target="_blank">CIA’s World Factbook</a></span>
           <p>Basic intelligence (e.g. history, government, economy, geography, transportation, military, etc.) for 265 world entities.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Data</span> <span class="badge">Portal</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Data</span> <span class="badge">Catalog</span> 
         </div>
       </div>
     </figure>
@@ -320,13 +331,13 @@
     </figure>
 
 
-    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","data"]' data-date-created="2024-08-28" data-title="Natural Earth">
+    <figure class="re col s12 m6 l4 picture-item" data-groups='["world","data", "catalog"]' data-date-created="2024-08-28" data-title="Natural Earth">
       <div class="card small">
         <div class="card-content">
           <span class="card-title"><a href="https://www.naturalearthdata.com/downloads/" target="_blank">Natural Earth</a></span>
           <p>Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales.</p>
         </div>
-        <div class="card-action"><span class="badge">World</span> <span class="badge">Data</span> 
+        <div class="card-action"><span class="badge">World</span> <span class="badge">Data</span> <span class="badge">Catalog</span>
         </div>
       </div>
     </figure>  
