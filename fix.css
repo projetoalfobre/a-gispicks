@@ -1,6 +1,9 @@
 .picture-item { margin-top: 24px;}
 
 .badge{text-transform: uppercase;}
+.collapsible-header{font-weight: 900;}
+h1{font-weight: 900;}
+
 
 figure{margin:0em 0px!important}
 
