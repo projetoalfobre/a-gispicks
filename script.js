@@ -5,7 +5,7 @@ class Demo {
     this.element = element;
     this.shuffle = new Shuffle(element, {
       itemSelector: '.picture-item',
-      initialSort: 'title',
+      initialSort: 'data-title',
       sizer: element.querySelector('.my-sizer-element') });
 
 
