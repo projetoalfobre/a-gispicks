@@ -1,26 +1,3 @@
-.footer-text {width: 50%; float: left; text-align: left;}
-.footer-links{width: 50%; float: left; text-align: right;}
-.footer-year {width: 100%; float: left; text-align: left;}
-
-@media only screen and (max-width: 768px) {
-    .footer-text, .footer-year {width: 100%; float: left; text-align: left;margin-left:1em;}
-    .footer-links{width: 100%; float: left; text-align: left;padding-right:1em;}
-}
-
-.main-footer {
-  padding: 15px 0;
-  background-color: #efefef;
-}
-
-.main-footer .copyright {
-text-align: center;
-  font-size: 0.8em;
-  color: rgba(0,0,0,.5) !important;
-}
-
-
-
-
 .about-body .contact-list {
   margin: 0;
   padding: 0;
