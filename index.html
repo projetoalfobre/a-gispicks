@@ -16,9 +16,9 @@
   
 	
 	<meta charset="UTF-8">
-	<title>A-GISpicks - A curated list of useful websites for GIS projects</title>
-	<meta name="description" content="Curated list of useful websites for GIS projects.">
-	<meta name="keywords" content="GIS,  Geographic Information System, favorites, resources, open data, data, maps, mapping">
+	<title>A-GISpicks - A curated list of useful websites for GIS and Cartography projects</title>
+	<meta name="description" content="Curated list of useful websites for GIS and Cartography projects.">
+	<meta name="keywords" content="GIS,  Geographic Information System, favorites, cartography,  resources, open data, data, maps, mapping">
 	<meta name="author" content="nafergo (Alfobre.com), nafergo@gmail.com">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -39,12 +39,12 @@
 	
 	<link rel="canonical" href="https://projetoalfobre.github.io/a-gispicks/">
 	
-	<meta property="og:title" content="A-GISpicks - A curated list of useful websites for GIS projects" />
+	<meta property="og:title" content="A-GISpicks - A curated list of useful websites for GIS and Cartography projects" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://projetoalfobre.github.io/a-gispicks/" />
 	<meta property="og:description" content="Curated list of useful websites for GIS projects" />
 	<meta property="og:locale" content="en_US" />
-	<meta property="og:site_name" content="A-GISpicks - A curated list of useful websites for GIS projects" />
+	<meta property="og:site_name" content="A-GISpicks - A curated list of useful websites for GIS and Cartography projects" />
 	<meta property="og:image" content="ogp.jpg" />
 	<meta property="og:image:type" content="image/jpeg" />
 	<meta property="og:image:width" content="1200" />
@@ -71,7 +71,7 @@
 <!-- partial:index.partial.html -->
 <div class="container mt-3">
   <h1 class="mb-3" style="font-weight: 900;">A-GISpicks</h1>
-  <h4 style="font-weight: lighter;">A curated list of useful websites for GIS projects</h4>
+  <h4 style="font-weight: lighter;">A curated list of useful websites for GIS and Cartography projects</h4>
 
   <div class="row">
     <div class="col">
@@ -89,14 +89,14 @@
           </label>
           <label class="btn btn-outline-success"><input type="radio" autocomplete="off"  name="shuffle-filter" value="portugal">Portugal</label>
           <label class="btn btn-outline-success"><input type="radio" autocomplete="off" name="shuffle-filter" value="europe">Europe</label>
-          <label class="btn btn-outline-success"><input type="radio" autocomplete="off" name="shuffle-filter" value="world">World</label>          
+          <label class="btn btn-outline-success"><input type="radio" autocomplete="off" name="shuffle-filter" value="world">World</label> 
           <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="borders">Borders</label>
-          <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="archaeology">Archaeology</label>
-          <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="elevation">Elevation</label>          
+          <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="elevation">Elevation</label>
+          <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="basemap">Basemap</label>
           <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="osm">OpenStreetMap</label>
           <label class="btn btn-outline-info"><input type="radio" autocomplete="off" name="shuffle-filter" value="toponymy">Toponymy</label>
-          <label class="btn btn-outline-danger"><input type="radio" autocomplete="off" name="shuffle-filter" value="data">Data</label> 
-          <label class="btn btn-outline-danger"><input type="radio" autocomplete="off" name="shuffle-filter" value="service">Service</label>  
+          <label class="btn btn-outline-danger"><input type="radio" autocomplete="off" name="shuffle-filter" value="data">Data</label>
+          <label class="btn btn-outline-danger"><input type="radio" autocomplete="off" name="shuffle-filter" value="service">Service</label>
 
       </div>
 </div>
@@ -112,13 +112,23 @@
         </div>
       </div>
     </figure>
+
+    <figure class="image-item col-6" data-groups='["world","elevation","data"]'>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase"><a href="https://dwtkns.com/srtm30m/" target="_blank" >30-Meter SRTM Tile Downloader</a></h5>
+          <span class="badge badge-info">World</span> <span class="badge badge-info">Data</span> <span class="badge badge-info">Elevation</span>
+          <p>Interface to easily download 30-meter resolution elevation data from the Shuttle Radar Topography Mission.</p>
+        </div>
+      </div>
+    </figure>    
     
     <figure class="image-item col-6" data-groups='["portugal","borders","data"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/198497815bf647ecaa990c34c42e932e" target="_blank" >CAOP</a></h5>
+          <h5 class="card-title text-uppercase"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/198497815bf647ecaa990c34c42e932e" target="_blank" >Carta Administrativa Oficial de Portugal</a></h5>
           <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Borders</span> <span class="badge badge-info">Data</span>
-          <p>The Official Administrative Charter of Portugal (Carta Administrativa Oficial de Portugal).</p>
+          <p>The Official Administrative Charter of Portugal.</p>
         </div>
       </div>
     </figure>  
@@ -128,6 +138,16 @@
         <div class="card-body">
           <h5 class="card-title text-uppercase"><a href="https://www.cia.gov/the-world-factbook/" target="_blank" >CIA’s World Factbook</a></h5>
           <span class="badge badge-info">World</span> <span class="badge badge-info">Data</span> 
+          <p>Basic intelligence (e.g. history, government, economy, geography, transportation, military, etc.) for 265 world entities.</p>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="image-item col-6" data-groups='["europe","elevation","data"]'>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase"><a href="https://browser.dataspace.copernicus.eu" target="_blank" >Copernicus Browser</a></h5>
+          <span class="badge badge-info">Europe</span> <span class="badge badge-info">Elevation</span>  <span class="badge badge-info">Data</span> 
           <p>Basic intelligence (e.g. history, government, economy, geography, transportation, military, etc.) for 265 world entities.</p>
         </div>
       </div>
@@ -166,7 +186,7 @@
     <figure class="image-item col-6" data-groups='["osm","world","data"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://daylightmap.org/" target="_blank" >Daylight</a></h5>
+          <h5 class="card-title text-uppercase"><a href="https://daylightmap.org/" target="_blank" >Daylight (OSM)</a></h5>
           <span class="badge badge-info">World</span> <span class="badge badge-info">OSM</span> <span class="badge badge-info">Data</span>
           <p>A complete distribution of global, open map data that’s freely available with support from community and professional mapmakers.</p>
         </div>
@@ -193,7 +213,7 @@
       </div>
     </figure>
 
-    <figure class="image-item col-6" data-groups='["world","data"]'>
+    <figure class="image-item col-6" data-groups='["world","borders","elevation","data"]'>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title text-uppercase"><a href="https://freegisdata.rtwilson.com/" target="_blank" >Free GIS Data</a></h5>
@@ -207,9 +227,9 @@
     <figure class="image-item col-6" data-groups='["borders","world","data"]'>
       <div class="card">
         <div class="card-body">
-		      <h5 class="card-title text-uppercase"><a href="https://gadm.org/" target="_blank" >GADM</a></h5>
+		      <h5 class="card-title text-uppercase"><a href="https://gadm.org/" target="_blank" >Global Administrative Areas</a></h5>
           <span class="badge badge-info">World</span> <span class="badge badge-info">Borders</span> <span class="badge badge-info">Data</span>
-          <p>The Global Administrative Areas provides access to administrative areas of all countries, at all levels of sub-division.</p>
+          <p>The Global Administrative Areas (GADM) provides access to administrative areas of all countries, at all levels of sub-division.</p>
         </div>
       </div>
     </figure>
@@ -224,11 +244,11 @@
       </div>
     </figure>
 
-    <figure class="image-item col-6" data-groups='["service","world","toponymy"]'>
+    <figure class="image-item col-6" data-groups='["service","world","toponymy","data"]'>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title text-uppercase"><a href="http://www.geonames.org/" target="_blank" >GeoNames </a></h5>
-          <span class="badge badge-info">World</span> <span class="badge badge-info">Toponymy</span> <span class="badge badge-info">Service</span>
+          <span class="badge badge-info">World</span> <span class="badge badge-info">Toponymy</span> <span class="badge badge-info">Service</span> <span class="badge badge-info">Data</span>
           <p> The GeoNames geographical database covers all countries and contains over eleven million placenames that are available for download free of charge. </p>
         </div>
       </div>
@@ -247,9 +267,9 @@
     <figure class="image-item col-6" data-groups='["data","portugal"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://cse.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_main" target="_blank" >INE</a></h5>
+          <h5 class="card-title text-uppercase"><a href="https://cse.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_main" target="_blank" >Instituto Nacional de Estatística</a></h5>
            <span class="badge badge-info">Portugal</span>  <span class="badge badge-info">Data</span>
-          <p>Official statistical information for Portugal</p>
+          <p>The Instituto Nacional de Estatística or INE is the government office for national statistics of Portugal. </p>
         </div>
       </div>
     </figure> 	 
@@ -264,12 +284,32 @@
       </div>
     </figure>
 
+    <figure class="image-item col-6" data-groups='["service","world","basemap"]'>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase"><a href="https://josm.openstreetmap.de/wiki/Maps" target="_blank" >JOSM Imagery sources</a></h5>
+          <span class="badge badge-info">World</span> <span class="badge badge-info">Basemap</span> <span class="badge badge-info">Service</span> 
+          <p>A searchable collection of datasets maintained by its community.</p>
+        </div>
+      </div>
+    </figure>
+
     <figure class="image-item col-6" data-groups='["data","world"]'>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title text-uppercase"><a href="https://www.kaggle.com/datasets/" target="_blank" >Kaggle Datasets</a></h5>
           <span class="badge badge-info">World</span>  <span class="badge badge-info">Data</span> 
           <p>A searchable collection of datasets maintained by its community.</p>
+        </div>
+      </div>
+    </figure>
+
+    <figure class="image-item col-6" data-groups='["basemap","world","service"]'>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase"><a href="https://github.com/leaflet-extras/leaflet-providers" target="_blank" >Leaflet providers</a></h5>
+          <span class="badge badge-info">World</span>  <span class="badge badge-info">Basemap</span>  <span class="badge badge-info">Service</span> 
+          <p>Various free tile providers, includes a preview. </p>
         </div>
       </div>
     </figure>
@@ -284,11 +324,11 @@
       </div>
     </figure>
 
-    <figure class="image-item col-6" data-groups='["world","data"]'>
+    <figure class="image-item col-6" data-groups='["world","borders", "data","elevation","basemap"]'>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title text-uppercase"><a href="https://www.naturalearthdata.com/downloads/" target="_blank" >Natural Earth</a></h5>
-          <span class="badge badge-info">World</span> <span class="badge badge-info">Data</span> 
+          <span class="badge badge-info">World</span> <span class="badge badge-info">Elevation</span> <span class="badge badge-info">Borders</span> <span class="badge badge-info">Basemap</span> <span class="badge badge-info">Data</span> 
           <p>Free vector and raster map data at 1:10m, 1:50m, and 1:110m scales.</p>
         </div>
       </div>
@@ -334,22 +374,22 @@
       </div>
     </figure>
 
-    <figure class="image-item col-6" data-groups='["portugal","archaeology","data"]'>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://patrimoniodgpc.maps.arcgis.com/home/item.html?id=b58036247d8849b59b45144135662d86" target="_blank" >Portal do Arqueólogo</a></h5>
-          <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Archaeology</span> <span class="badge badge-info">Data</span>
-          <p>Georeferenced archaeological heritage registered in the portuguese national archaeological information and management system.</p>
-        </div>
-      </div>
-    </figure>
-
     <figure class="image-item col-6" data-groups='["world","service"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://qms.nextgis.com/" target="_blank" >QMS</a></h5>
+          <h5 class="card-title text-uppercase"><a href="https://qms.nextgis.com/" target="_blank" >QuickMapServices</a></h5>
           <span class="badge badge-info">World</span>   <span class="badge badge-info">Service</span>
           <p>QuickMapServices (QMS) is an open catalog of geospatial services and a way to add them easily to desktop GIS software.</p>
+        </div>
+      </div>
+    </figure>  
+
+    <figure class="image-item col-6" data-groups='["world","service","basemap","osm"]'>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-uppercase"><a href="https://wiki.openstreetmap.org/wiki/Raster_tile_providers" target="_blank" >Raster tile providers (OSM)</a></h5>
+          <span class="badge badge-info">World</span> <span class="badge badge-info">OSM</span> <span class="badge badge-info">Basemap</span> <span class="badge badge-info">Service</span>
+          <p>List of online raster tile servers based on OpenStreetMap data.</p>
         </div>
       </div>
     </figure>  
@@ -357,23 +397,22 @@
     <figure class="image-item col-6" data-groups='["data","portugal"]'>
       <div class="card">
         <div class="card-body">
-		      <h5 class="card-title text-uppercase"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/home" target="_blank" >RNDG</a></h5>
+		      <h5 class="card-title text-uppercase"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/home" target="_blank" >Registo Nacional de Dados Geográficos</a></h5>
           <span class="badge badge-info">Portugal</span>  <span class="badge badge-info">Data</span>
           <p>The portuguese National Geographic Data Registry is a catalog of geodata produced or maintained by portuguese public authorities.</p>
         </div>
       </div>
     </figure>
 
-    <figure class="image-item col-6" data-groups='["portugal","service"]'>
+    <figure class="image-item col-6" data-groups='["data","service","portugal"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="http://www.monumentos.gov.pt/Site/APP_PagesUser/SIPASearch.aspx?id=0c69a68c-2a18-4788-9300-11ff2619a4d2" target="_blank" > SIPA 
-            database</a></h5>
-          <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Service</span>
-          <p>SIPA (Sistema de Informação para o Património Arquitetónico) is the portuguese Information System for Architectural Heritage. It's a national database maintained by a government agency.</p>
+		      <h5 class="card-title text-uppercase"><a href="https://sniamb.apambiente.pt/" target="_blank" >Sistema Nacional de Informação de Ambiente</a></h5>
+          <span class="badge badge-info">Portugal</span>  <span class="badge badge-info">Data</span> <span class="badge badge-info">Service</span>
+          <p>SNIAmb (Sistema Nacional de Informação de Ambiente - National Environmental Information System) is a visualization and a catalog of geodata produced or maintained by portuguese public authorities.</p>
         </div>
       </div>
-    </figure> 	
+    </figure>
 
     <figure class="image-item col-6" data-groups='["data","world"]'>
       <div class="card">
@@ -388,27 +427,27 @@
     <figure class="image-item col-6" data-groups='["service","world","osm"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://taginfo.openstreetmap.org/" target="_blank" >taginfo</a></h5>
+          <h5 class="card-title text-uppercase"><a href="https://taginfo.openstreetmap.org/" target="_blank" >taginfo (OSM)</a></h5>
           <span class="badge badge-info">World</span> <span class="badge badge-info">OSM</span> <span class="badge badge-info">Service</span>
           <p>Taginfo helps you by showing statistics about which tags are actually in the OpenStreetMap database.</p>
         </div>
       </div>
     </figure>  
 
-    <figure class="image-item col-6" data-groups='["portugal","service"]'>
+    <figure class="image-item col-6" data-groups='["portugal","toponymy","data"]'>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title text-uppercase"><a href="https://servicos.dgpc.gov.pt/pesquisapatrimonioimovel/index.php" target="_blank" >Ulysses database</a></h5>
-          <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Service</span> 
-          <p>Ulysses Database: heritage registered (classified/protected) in the portuguese national heritage information and management system. It's a national database maintained by a government agency.</p>
+          <h5 class="card-title text-uppercase"><a href="https://snig.dgterritorio.gov.pt/rndg/srv/por/catalog.search#/metadata/57479cf3-df10-47a0-9860-f7e3157596b1" target="_blank" > Toponímia de Portugal Continental 1:200 000 </a></h5>
+          <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Toponymy</span> <span class="badge badge-info">Data</span>
+          <p>Taginfo helps you by showing statistics about which tags are actually in the OpenStreetMap database.</p>
         </div>
       </div>
-    </figure> 
+    </figure>  
 
     <figure class="image-item col-6" data-groups='["portugal","service","data"]'>
       <div class="card">
         <div class="card-body">
-		      <h5 class="card-title text-uppercase"><a href="https://smos.dgterritorio.gov.pt/vi-smos/" target="_blank" >viSMOS</a></h5>
+		      <h5 class="card-title text-uppercase"><a href="https://smos.dgterritorio.gov.pt/vi-smos/" target="_blank" >Visualizador SMOS</a></h5>
           <span class="badge badge-info">Portugal</span> <span class="badge badge-info">Data</span> <span class="badge badge-info">Service</span>
           <p>WebGIS of the Land Occupation Monitoring System (SMOS), a portuguese national administration project.</p>
         </div>
@@ -456,7 +495,8 @@
     </div>
     <div class="row">
       <div class="col" style="font-size: small;color: rgba(0,0,0,.5) !important;">
-        2024-2025 | <a href="http://alfobre.com" target="_blank">Alfobre.com</a>
+        2024-2025 | <a href="http://alfobre.com" target="_blank">Alfobre.com</a><br>
+        Last update: <script> document.write(new Date().toISOString()); </script>
       </div>
     </div>
   </div>
